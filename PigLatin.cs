@@ -53,7 +53,7 @@ namespace Pig_Latin
                     {
                         int vowelIndex = i; //this finds where the vowel begins
                         string consBeforeVowel = input.Substring(0, vowelIndex); //this is supposed to go from that found vowel to the end of the sentence
-                        string restOfWord = input.Substring(vowelIndex, input.Length - 1);
+                        string restOfWord = input.Substring(vowelIndex, input.Length- vowelIndex - 1);//broken 
                         restOfWord = restOfWord + consBeforeVowel + "ay";
                         return restOfWord;
                     }
